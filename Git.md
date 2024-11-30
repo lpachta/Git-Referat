@@ -34,7 +34,7 @@ Git je zdarma a open source **distribuovaný systém pro správu verzí** navrž
 
 ![Subversion-style workflow](https://git-scm.com/images/about/workflow-c@2x.png)
 
-# Práce s git (jupí)
+# Práce s git 
 
 ## 1. Instalace 
 
@@ -83,6 +83,8 @@ git config --global init.defaultBranch main
 
 Nastavíme jméno hlavní větve při nové inicializaci
 
+Pokud chceme konfiguraci jen aktuálního repozitáře, používáme bez --global
+
 ## 3. Vytvoření repozitáře
 
 Git pracuje s repozitáři.
@@ -97,13 +99,27 @@ git init [-b <branch_name>]
 
 Příkaz vytvoří skrytou složku .git => adresář slouží jako root nového git repozitáře
 
-Repozitář se ruší smazáním `.git/`:
+## 4. Zrušení repozitáře
+
+Repozitář se ruší prostým smazáním `.git/` adresáře.
 
 ```bash
 rm -rf .git
 ```
 
-## 5. Přidání souborů do indexu
+## 5. Status repozitáře
+
+Pro tisk stavu repozitáře použijeme:
+
+```bash
+git status
+```
+
+- aktuální větev
+- jak moc je aktuální vůči serveru
+- 
+
+## 6. Přidání souborů do indexu
 
 Index je mezistav, kdy soubor je připraven na commit, ale commit ještě neproběhl.
 
@@ -119,14 +135,6 @@ Odebrání souborů z indexu:
 
 ```bash
 git rm --cached [-r (rekurzivně)] <file>
-```
-
-## 6. Status repozitáře
-
-Pro zjištění, které soubory máme v indexu a které ještě chybí, můžeme použít:
-
-```bash
-git status
 ```
 
 ## 7. .gitignore
@@ -206,3 +214,8 @@ Jakmile máme práci ve vedlejší větvi hotovou, použijeme merge. Příkaz vo
 ```bash
 git merge <větev>
 ```
+
+
+
+
+
