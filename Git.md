@@ -1,3 +1,5 @@
+# Git
+
 Oficiální webová stránka: [git-scm.com](https://git-scm.com/)
 
 Git je zdarma a open source **distribuovaný systém pro správu verzí** navržený tak, aby rychle a efektivně zvládl vše od malých až po velmi velké projekty.
@@ -101,7 +103,7 @@ Repozitář se ruší smazáním `.git/`:
 rm -rf .git
 ```
 
-## 4. Přidání souborů do indexu
+## 5. Přidání souborů do indexu
 
 Index je mezistav, kdy soubor je připraven na commit, ale commit ještě neproběhl.
 
@@ -111,5 +113,13 @@ Soubory přidáme příkazem:
 git add <file 1> <file 2> ... # Přidání jednotlivých souborů
 
 git add . # Přidání všech souborů
+```
+
+## 6. Status repozitáře
+
+Pro zjištění, které soubory máme v indexu, můžeme použít:
+
+```bash
+git status
 ```
 
