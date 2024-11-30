@@ -115,11 +115,67 @@ git add <file 1> <file 2> ... # Přidání jednotlivých souborů
 git add . # Přidání všech souborů
 ```
 
+Odebrání souborů z indexu:
+
+```bash
+git rm --cached [-r (rekurzivně)] <file>
+```
+
 ## 6. Status repozitáře
 
-Pro zjištění, které soubory máme v indexu, můžeme použít:
+Pro zjištění, které soubory máme v indexu a které ještě chybí, můžeme použít:
 
 ```bash
 git status
 ```
+
+## 7. .gitignore
+
+Pokud chceme, aby git ignoroval nějaký soubor nebo soubory, můžeme vytvořit soubor `.gitignore`:
+
+```bash
+touch .gitignore
+nano .gitignore
+```
+
+## 8. Commit
+
+Pokud máme v indexu všechny soubory, které chceme, můžeme uložit nynější verzi všech souborů v indexu pomocí `commit`.
+
+```bash
+git commit -m "Message"
+```
+
+Message je povinný flag. Zprávy se dělají co nejstručnější, ale nejvýstižnější a nejjasnější.
+
+## 9. Log
+
+Pro tisk všech verzí větve použijeme
+
+```bash
+git log
+```
+
+Zjistíme:
+
+- hash klíče jednotlivých verzí
+- autora verzí
+- datum verzí
+- zprávu verzí
+
+## 10. Checkout
+
+Pomocí `checkout` můžeme:
+
+- jít o `n` verzí zpět ve větvi
+
+```bash
+
+```
+
+- jít na libovolnou verzi díky hash klíči
+
+
+
+- jít na libovolnou větev
 
