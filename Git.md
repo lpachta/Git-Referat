@@ -226,7 +226,19 @@ Jakmile máme práci ve vedlejší větvi hotovou, použijeme merge. Příkaz vo
 git merge <větev>
 ```
 
+# Cvičení
 
+Zadání:
 
+Ve staženém adresáři je podadresář Projekt. V něm se nachází 3 úkoly. 
 
+1. Vytvoř branch `develop`, ve kterém budeš dělat úpravy
+
+2. Odstraň zbytečnou funkci, proveď stage a commit 
+
+3. Z `develop` vytvoř větev `feature` a přidej funkci na získání obvodu, nezapomeň ji zavolat v mainu. Stage, commit.
+
+4. Ale ne! Uživatelé našli chybu v produkci. Není čas čekat na novou verzi, je potřeba provést rychlý bugfix. Vytvoř z `main` větev `bugfix` a v něm doplň ošetření kódu. Stage, commit a sluč `bugfix` a `main`.
+
+5. Nadešel čas vydat novou verzi programu. `feature` sluč s `develop` a `develop` s `main`.
 

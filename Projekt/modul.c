@@ -14,7 +14,16 @@ Trojuhelnik *newTrojuhelnik(float A, float B, float C) {
   return newT;
 }
 
-// UKOL 1: feature: udelej funkci na vraceni obvodu trojuhelnika
+// UKOL 2: develop/feature: udelej funkci na vraceni obvodu trojuhelnika
+//
+// UKOL 1: develop: odstran zbytecnou funkci
+
+char *zbytecnaFunkce(int aaa) {
+  if (1) {
+    return "neahoj";
+  }
+  return "ahoj";
+}
 
 void printTrojuhelnik(Trojuhelnik *trojuhelnik) {
   printf("              /\\          \n");

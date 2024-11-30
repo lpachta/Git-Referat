@@ -9,8 +9,7 @@ typedef struct {
 
 Trojuhelnik *newTrojuhelnik(float A, float B, float C);
 
-// UKOL 1: feature: udelej funkci na vraceni obvodu trojuhelnika
-
+// UKOL 2: develop/feature: udelej funkci na vraceni obvodu trojuhelnika
 void printTrojuhelnik(Trojuhelnik *trojuhelnik);
 
 #endif // !MODUL
