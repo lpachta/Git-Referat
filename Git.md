@@ -117,7 +117,10 @@ git status
 
 - aktuální větev
 - jak moc je aktuální vůči serveru
-- 
+- soubory v indexu
+	- připravené na commit
+	- upravené soubory 
+- soubory mimo index
 
 ## 6. Přidání souborů do indexu
 
@@ -144,6 +147,14 @@ Pokud chceme, aby git ignoroval nějaký soubor nebo soubory, můžeme vytvořit
 ```bash
 touch .gitignore
 nano .gitignore
+```
+
+.gitignore: 
+
+```
+main.c     # ignoruje soubor main.c
+*.bin      # ignoruje všechny soubory s příponou .bin
+Projekt    # ignoruje složku Projekt
 ```
 
 ## 8. Commit
