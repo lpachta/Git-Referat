@@ -153,7 +153,7 @@ Message je povinný flag. Zprávy se dělají co nejstručnější, ale nejvýst
 Pro tisk všech verzí větve použijeme
 
 ```bash
-git log
+git log [--oneline (jednořádkový výpis)] [-n <int> (pocet poslednich verzi)]
 ```
 
 Zjistíme:
@@ -170,12 +170,39 @@ Pomocí `checkout` můžeme:
 - jít o `n` verzí zpět ve větvi
 
 ```bash
-
+git checkout HEAD~<n>
 ```
 
 - jít na libovolnou verzi díky hash klíči
 
-
+```bash
+git checkout <hask key>
+```
 
 - jít na libovolnou větev
 
+```bash
+git checkout <jméno větve>
+```
+
+- rozvětvit na novou větev
+
+```bash
+git checkout -b <jméno větve>
+```
+
+## 11. Diff
+
+Když se chceme podívat na rozdíly mezi soubory v různých verzích použijeme
+
+```bash
+git diff <verze 1> <verze 2> 
+```
+
+## 12. Merge
+
+Jakmile máme práci ve vedlejší větvi hotovou, použijeme merge. Příkaz voláme z větve, do které chceme větve spojit.
+
+```bash
+git merge <větev>
+```
