@@ -13,13 +13,29 @@ Oficiální webová stránka: [git-scm.com](https://git-scm.com/)
 
 >[!IMPORTANT]
 >
-> Repozitář = Projekt spravovaný gitem
+> **Repozitář** = Projekt spravovaný gitem
+> 
+> **Commit** = Uložení stavu repozitáře do verze
+> 
+> **Index / Stage** = Soubory připravené ke commitu
+>
+> **HEAD** = Verze, se kterou právě pracuji
+
+![](attachments/Pasted%20image%2020241203201104.png)
 
 ### 2. Paralelně rozdělovat a spojovat verze - Větvení
 
 - možnost pracovat paralelně s více větvemi projektu, které se dají sloučit zpět 
 
 ![Git branching 1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthe-turing-way.netlify.app%2F_images%2Fsub-branch.png&f=1&nofb=1&ipt=56d6c30367f44de1b224cc9b02c8cabf8ce1a434190b8f5da07e4cf0252d1118&ipo=images)
+
+> [!IMPORTANT]
+> 
+> **Branch** = Větev
+>
+> **Checkout** = Změna verze, se kterou pracuji
+> 
+> **Merge** = Sloučení větví
 
 ![Git branching 1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmap-client.readthedocs.io%2Fen%2Flatest%2F_images%2Fgitflow.png&f=1&nofb=1&ipt=62c8b9533ae62488f0d48410e6c0d6297f277de2256f5257ff0bbfe4dbc9e289&ipo=images)
 
@@ -65,7 +81,7 @@ sudo dnf install git
 sudo pacman -S git
 ```
 
-**Ostatní:**
+**Ostatní Linux distribuce, MacOS, Windows:**
 
 [Webová stránka git s návodem na instalaci](https://git-scm.com/downloads)
 
@@ -125,7 +141,27 @@ git status
 	- upravené soubory 
 - soubory mimo index
 
-## 6. Přidání souborů do indexu
+## 6. .gitignore
+
+Pokud chceme, aby git ignoroval nějaký soubor nebo soubory, můžeme vytvořit soubor `.gitignore`:
+
+```bash
+touch .gitignore
+
+kate .gitignore
+vim .gitignore
+nano .gitignore
+```
+
+.gitignore: 
+
+```
+main.c     # ignoruje soubor main.c
+*.bin      # ignoruje všechny soubory s příponou .bin
+Projekt    # ignoruje složku Projekt
+```
+
+## 7. Přidání souborů do indexu
 
 Index je mezistav, kdy soubor je připraven na commit, ale commit ještě neproběhl.
 
@@ -141,23 +177,6 @@ Odebrání souborů z indexu:
 
 ```bash
 git rm --cached [-r (rekurzivně)] <file>
-```
-
-## 7. .gitignore
-
-Pokud chceme, aby git ignoroval nějaký soubor nebo soubory, můžeme vytvořit soubor `.gitignore`:
-
-```bash
-touch .gitignore
-nano .gitignore
-```
-
-.gitignore: 
-
-```
-main.c     # ignoruje soubor main.c
-*.bin      # ignoruje všechny soubory s příponou .bin
-Projekt    # ignoruje složku Projekt
 ```
 
 ## 8. Commit
@@ -192,13 +211,13 @@ Pomocí `checkout` můžeme:
 - jít o `n` verzí zpět ve větvi
 
 ```bash
-git checkout HEAD~<n>
+git checkout HEAD[~n]
 ```
 
 - jít na libovolnou verzi díky hash klíči
 
 ```bash
-git checkout <hask key>
+git checkout <hash key>
 ```
 
 - jít na libovolnou větev
