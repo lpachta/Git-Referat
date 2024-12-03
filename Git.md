@@ -1,16 +1,19 @@
-# Git
 
-Oficiální webová stránka: [git-scm.com](https://git-scm.com/)
+![Git logo](https://git-scm.com/images/logo@2x.png)
 
 Git je zdarma a open source **distribuovaný systém pro správu verzí** navržený tak, aby rychle a efektivně zvládl vše od malých až po velmi velké projekty.
 
-![Git logo](https://git-scm.com/images/logo@2x.png)
+Oficiální webová stránka: [git-scm.com](https://git-scm.com/)
 
 ## Co umí?
 
 ### 1. Zachovávat verze projektu
 
 - možnost vrátit se zpět k předešlé verzi
+
+>[!TERMINOLOGIE]
+>
+> Repozitář = Projekt spravovaný gitem
 
 ### 2. Paralelně rozdělovat a spojovat verze - Větvení
 
@@ -20,7 +23,7 @@ Git je zdarma a open source **distribuovaný systém pro správu verzí** navrž
 
 ![Git branching 1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmap-client.readthedocs.io%2Fen%2Flatest%2F_images%2Fgitflow.png&f=1&nofb=1&ipt=62c8b9533ae62488f0d48410e6c0d6297f277de2256f5257ff0bbfe4dbc9e289&ipo=images)
 
-### 3. Distribuce projektu mezi kolaboranty
+### 3. Distribuce projektu mezi vývojáři
 
 #### Subversion-Style Workflow
 
