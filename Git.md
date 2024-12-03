@@ -262,5 +262,5 @@ Ve staženém adresáři je podadresář Projekt. V něm se nachází 3 úkoly.
 
 4. Ale ne! Uživatelé našli chybu v produkci. Není čas čekat na novou verzi, je potřeba provést rychlý bugfix. Vytvoř z `main` větev `bugfix` a v něm doplň ošetření kódu. Stage, commit a sluč `bugfix` a `main`.
 
-5. Nadešel čas vydat novou verzi programu. `feature` sluč s `develop` a `develop` s `main`.
+5. Nadešel čas vydat novou verzi programu pro veřejnost. `feature` sluč s `develop` a `develop` s `main`.
 
