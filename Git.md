@@ -11,7 +11,7 @@ Oficiální webová stránka: [git-scm.com](https://git-scm.com/)
 
 - možnost vrátit se zpět k předešlé verzi
 
->[!TERMINOLOGIE]
+>[!NOTE]
 >
 > Repozitář = Projekt spravovaný gitem
 
