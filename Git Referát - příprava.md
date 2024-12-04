@@ -10,4 +10,4 @@
 4. Pokud chcete, otevřete si Git.md na Githubu
 5. Pokud chcete pracovat s GUI gitem, budeme používat Git Kraken
 
-[](https://www.gitkraken.com/download)
+[https://www.gitkraken.com/download](https://www.gitkraken.com/download)
