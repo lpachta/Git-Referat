@@ -8,4 +8,6 @@
 
 3. Extrahujte archiv
 4. Pokud chcete, otevřete si Git.md na Githubu
+5. Pokud chcete pracovat s GUI gitem, budeme používat Git Kraken
 
+[](https://www.gitkraken.com/download)
